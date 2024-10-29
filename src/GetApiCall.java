@@ -12,8 +12,7 @@ public class GetApiCall {
         //creating an instance of httpClient
         HttpClient httpClient = HttpClient.newHttpClient();
         //creating an instance of httpRequest with the api URL
-//        String name;
-//        String value;
+
         HttpRequest httpRequest = HttpRequest.newBuilder()
                 .uri(URI.create(apiUrl))
                 .header("Content-Type","application/json").GET().build();
